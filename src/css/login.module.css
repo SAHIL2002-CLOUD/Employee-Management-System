@@ -1,0 +1,110 @@
+#main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#logins {
+  width: 50%;
+  height: 100vh;
+  padding: 1.5rem;
+  /* background-color: aliceblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 50%;
+  background-color: transparent;
+  padding: 3rem;
+  border: 0.2rem solid #cccc;
+  border-radius: 5%;
+  backdrop-filter: blur(-10em);
+  box-shadow: 0.1rem 1rem 2rem 0 #fff;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#registerbtn {
+  margin-top: 1.1rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: none;
+  border-top-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+  background-color: #0fb0e8b3;
+  cursor: pointer;
+}
+
+#registerbtn:hover {
+  background-color: #0fa3d4;
+  transition: background-color 0.3s ease;
+}
+
+#left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#left img {
+  width: 50%;
+}
+
+#left .btn{
+  align-self: center;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-top-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+  cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #000;
+}
+
+#left .btn:hover {
+  background-color: rgb(46, 202, 226);
+}
+
+#left .btn a:hover {
+  color: rgb(255, 255, 255);
+} 
+
+@media (max-width: 768px) {
+  #main {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  #left,
+  #logins {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* height: auto; */
+    padding: 1rem;
+  }
+  #registerbtn {
+    padding: 0.5rem 1rem;
+  }
+}

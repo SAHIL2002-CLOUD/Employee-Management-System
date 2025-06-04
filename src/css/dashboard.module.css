@@ -1,0 +1,199 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6fc;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.link{
+  text-decoration: none;
+  color: #333;
+}
+.user{
+    height: 30px;
+    width: inherit;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #e6ebf5;
+  padding: 1.3rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: #0a4dad;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 0.8rem;
+  font-size: 19px;
+  color: #333;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.sidebar li:hover {
+  background-color: #d9e2f3;
+}
+
+.icon {
+  margin-right: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* Main content */
+.mainContent {
+  flex-grow: 1;
+  padding: 1.5rem 2rem;
+  overflow-y: auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.header h2 {
+  font-size: 2rem;
+}
+
+.header .searchBar {
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.4rem; 
+  border: 1px solid #ccc; 
+  width: 350px;
+  font-size: 1.2rem;
+} 
+
+.profileInfo {
+  background-color: #eef1f9;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.status {
+  color: green;
+  font-size: 1rem;
+}
+
+/* Welcome Banner */
+.welcomeBanner {
+  background-color: #d6def7;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.welcomeBanner h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5px;
+}
+
+.welcomeBanner p {
+  font-size: 0.8rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Grid for Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #e8ebfc;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #0f2e6e;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Chart Section Placeholder */
+.chartSection {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.chartSection h3 {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  color: #0f2e6e;
+}
+
+.chartSection .tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  font-size: 1.2rem;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: scroll;
+  min-width: 600px;
+}
+
+.table th,
+.table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.status {
+  color: white;
+  background-color: #22c55e;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
